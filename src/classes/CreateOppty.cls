@@ -10,6 +10,8 @@ public class CreateOppty {
                 WHERE Id = :caseId
         ];
         Date d = Date.today().addMonths(1);
+
+
         Opportunity newOpp = new Opportunity(Name = oppName,
                 AccountId = caseRecord.AccountId,
                 StageName = 'Perception Analysis',
